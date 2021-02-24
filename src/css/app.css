@@ -1,0 +1,75 @@
+.app {
+	background-color: #e8e8e8;
+}
+
+.header {
+	background-color: #0e5c1d;
+	height: 50px;
+	padding: 20px 30px;
+	color: white;
+}
+
+.body {
+	padding: 20px;
+	height: 1000px;
+}
+
+.cartBody {
+	flex: 1;
+	height: 700px;
+	margin: 10px;
+	padding: 0 15px;
+	background-color: white;
+}
+
+.cartSummary {
+	flex: 0.5;
+	height: 400px;
+	margin: 10px;
+	padding: 0 15px;
+	text-align: left;
+	background-color: white;
+}
+
+.lineItem {
+	font-size: 18px;
+	margin: 0 0 20px 0;
+}
+
+.divider {
+	height: 0;
+	border-bottom: 2px solid black;
+	width: 100%;
+	margin: 10px 0 20px 0;
+}
+
+.checkoutButton {
+	height: 50px;
+	width: 100%;
+	background-color: #0e5c1d;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+/* Flex */
+
+.flexRowStart {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.flexRowCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flexRowBetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
