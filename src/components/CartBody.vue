@@ -9,26 +9,7 @@
 
 <script>
 export default {
-	name: 'CartBody',
-	props: {
-
-	},
-	components: {
-
-	},
-	computed: {
-
-	},
-	data() {
-		return {
-
-		}
-	},
-	methods: {
-		renderCartProducts() {
-			return null;
-		}
-	}
+	name: 'CartBody'
 }
 </script>
 
