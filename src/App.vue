@@ -1,10 +1,10 @@
 <template>
-	<div className="app">
-		<div className="header flexRowBetween">
-			<h2>PortalParts</h2>
+	<div class="app">
+		<div class="header flex-row-between">
+			<h1>PortalParts</h1>
 			<h2>Cart</h2>
 		</div>
-		<div className="body flexRowCenter">
+		<div class="body flex-row-center">
 			<cart-body />
 			<cart-summary />
 		</div>
@@ -19,6 +19,6 @@ export default {
 	components: {
 		CartBody,
 		CartSummary,
-	},
+	}
 };
 </script>

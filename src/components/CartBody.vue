@@ -1,7 +1,7 @@
 <template>
-	<div className="cartBody">
+	<div class="cart-body">
 		<h3>You have ? items in your cart</h3>
-		<div className="cartBodyContent">
+		<div class="cart-body-content">
 			<!-- render cart products here -->
 		</div>
 	</div>
@@ -12,6 +12,3 @@ export default {
 	name: 'CartBody'
 }
 </script>
-
-<style>
-</style>

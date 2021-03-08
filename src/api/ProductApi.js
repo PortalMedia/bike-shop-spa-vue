@@ -1,4 +1,11 @@
-let cart = {
+export default class ProductApi {
+	async getCartData() {
+		await sleep(250);
+		return cartData;
+	}
+}
+
+const cartData = {
 	id: 123,
 	deliveryMethod: "Ship",
 	shipCost: 15.00,
@@ -36,4 +43,10 @@ let cart = {
 	]
 }
 
-export default cart;
+function sleep(time) {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve();
+		}, time);
+	});
+}
