@@ -1,3 +1,6 @@
+// For pairing assessments only. Take-home versions of this test should use the provided
+// AWS endpoint.
+
 export default class ProductApi {
 	async getCartData() {
 		await sleep(250);
