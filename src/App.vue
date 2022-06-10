@@ -4,7 +4,7 @@
 			<h1>PortalParts</h1>
 			<h2>Cart</h2>
 		</div>
-		<div class="body flex-row-center">
+		<div :class="this.width > 800 ? 'body flex-row-center' : 'body'">
 			<cart-body />
 			<cart-summary />
 		</div>
@@ -21,6 +21,9 @@ export default {
 		CartBody,
 		CartSummary,
 	},
+	data: () => ({
+		width: window.innerWidth,
+	}),
 	/**
 	 * Fetch cart info from the api before mount
 	 * Mutate store with response values
@@ -34,6 +37,11 @@ export default {
 				console.error(err)
 				alert('No response from the api')
 			})
+	},
+	mounted() {
+    window.onresize = () => {
+      this.width = window.innerWidth
+    }		
 	}
 };
 </script>
