@@ -28,7 +28,7 @@ export default {
 	beforeMount() {
 		axios.get('https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart')
 			.then((resp) => {
-				console.log(resp.data)
+				this.$store.dispatch('init', resp.data)
 			})
 			.catch((err) => {
 				console.error(err)
