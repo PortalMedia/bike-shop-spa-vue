@@ -23,6 +23,7 @@ export default {
 	},
 	/**
 	 * Fetch cart info from the api before mount
+	 * Mutate store with response values
 	 */
 	beforeMount() {
 		axios.get('https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart')
