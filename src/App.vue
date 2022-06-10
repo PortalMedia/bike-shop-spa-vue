@@ -14,11 +14,25 @@
 <script>
 import CartBody from './components/CartBody';
 import CartSummary from './components/CartSummary';
+import axios from 'axios';
 export default {
 	name: 'App',
 	components: {
 		CartBody,
 		CartSummary,
+	},
+	/**
+	 * Fetch cart info from the api before mount
+	 */
+	beforeMount() {
+		axios.get('https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart')
+			.then((resp) => {
+				console.log(resp.data)
+			})
+			.catch((err) => {
+				console.error(err)
+				alert('No response from the api')
+			})
 	}
 };
 </script>
