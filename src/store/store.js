@@ -11,20 +11,41 @@ const store = new Vuex.Store({
       id: null,
       deliveryMethod: '',
       products: [],
-      shiptCost: null
+      shipCost: null
     },
     mutations: {
       // updates the prodcuts array with new qty of repsective item(s)
-      update(state, payload) {
-        
-      }
+      increase(state, payload) {
+        return state.products[payload].qty++;
+      },
+      decrease(state, payload) {
+        return state.products[payload].qty--;
+      },
+      setId(state, payload) {
+        return state.id = payload
+      },
+      setDeilveryMethod(state, payload) {
+        return state.deliveryMethod = payload
+      },
+      setProducts(state, payload) {
+        return state.products = payload
+      },
+      setShipCost(state, payload) {
+        return state.shipCost = payload
+      },
     },
     actions: {
+      init(context, payload) {
+        context.commit('setId', payload.id)
+        context.commit('setDeilveryMethod', payload.deliveryMethod)
+        context.commit('setProducts', payload.products)
+        context.commit('setShipCost', payload.shipCost)
+      },
       increaseQty(context, payload) {
-        context.commit('update', update);
+        context.commit('increase', payload);
       },
       decreaseQty(context, payload) {
-        context.commit('update', update);
+        context.commit('decrease', payload);
       }
     }
 });
