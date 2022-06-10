@@ -18,8 +18,11 @@
 							<button v-on:click="increase(index)">+</button>
 						</li>
 						<li v-if="item.onSale && item.qty > 0">
-							regular price: <span style="text-decoration: line-through; color: red">${{item.qty * item.regularPrice}}</span>
-							<p>sale price: &nbsp;${{item.qty * item.salePrice}}</p>
+							regular price: <span style="text-decoration: line-through;">${{item.qty * item.regularPrice}}</span>
+							<div>
+								<span style="color: red">sale price: &nbsp;${{item.qty * item.salePrice}}</span>
+
+							</div>
 						</li>
 						<li v-else-if="item.qty > 0">
 							<span>price: ${{item.qty * item.regularPrice}}</span>
