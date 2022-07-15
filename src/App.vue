@@ -1,24 +1,22 @@
+<script setup lang="ts">
+import CartContainer from './components/CartContainer.vue';
+import { Suspense } from 'vue';
+</script>
+
 <template>
-	<div class="app">
-		<div class="header flex-row-between">
+  <div class="app">
+		<header class="header flex-row-between">
 			<h1>PortalParts</h1>
 			<h2>Cart</h2>
-		</div>
-		<div class="body flex-row-center">
-			<cart-body />
-			<cart-summary />
-		</div>
+		</header>
+    <main class="body flex-row-center">
+      <Suspense>
+        <cart-container></cart-container>
+        <template #fallback>
+          <div>Loading... </div>
+        </template>
+      </Suspense>
+    </main>
 	</div>
 </template>
 
-<script>
-import CartBody from './components/CartBody';
-import CartSummary from './components/CartSummary';
-export default {
-	name: 'App',
-	components: {
-		CartBody,
-		CartSummary,
-	}
-};
-</script>

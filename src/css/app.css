@@ -1,3 +1,8 @@
+:root {
+	--blue: #23428b;
+	--green: #32bf4c;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -28,6 +33,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -68,7 +74,7 @@ h2 {
 
 .header {
 	align-items: center;
-	background-color: #23428b;
+	background-color: var(--blue);
 	height: 50px;
 	padding: 20px 30px;
 	color: white;
@@ -104,7 +110,7 @@ h2 {
 }
 
 .checkout-button {
-	background-color: #23428b;
+	background-color: var(--blue);
 	border: none;
 	color: white;
 	cursor: pointer;
@@ -136,3 +142,12 @@ h2 {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+@media screen and (max-width: 775px) {
+	.flex-row-between,
+	.flex-row-center,
+	.flex-row-start {
+		flex-direction: column;
+	}
+}
+
