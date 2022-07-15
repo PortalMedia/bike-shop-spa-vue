@@ -28,7 +28,7 @@
 				</div>
 
 				<div class="cart-item-quantity">
-					{{/* send action to cart container where cart object can be mutated */}}
+
 					<button @click="emit('decrementQty', item.portalNumber)"> - </button>
 
 					<input type="number" :value="item.qty" disabled>
