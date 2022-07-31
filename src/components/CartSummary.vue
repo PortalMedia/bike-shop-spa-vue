@@ -19,19 +19,14 @@
 				<span>Total</span>
 				<span>?</span>
 			</div>
-			<div class="flex-row-between line-item" :style="{ color: '#b51414' }">
+			<div
+				class="flex-row-between line-item"
+				:style="{ color: '#b51414' }"
+			>
 				<span>You Saved</span>
 				<span>?</span>
 			</div>
 		</div>
-		<button class="checkout-button">
-			Checkout Now
-		</button>
+		<button class="checkout-button">Checkout Now</button>
 	</div>
 </template>
-
-<script>
-export default {
-	name: 'CartSummary'
-}
-</script>
