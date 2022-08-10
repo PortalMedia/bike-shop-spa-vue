@@ -11,14 +11,7 @@
 	</div>
 </template>
 
-<script>
-import CartBody from './components/CartBody';
-import CartSummary from './components/CartSummary';
-export default {
-	name: 'App',
-	components: {
-		CartBody,
-		CartSummary,
-	}
-};
+<script setup>
+import CartBody from "./components/CartBody.vue";
+import CartSummary from "./components/CartSummary.vue";
 </script>
