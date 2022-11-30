@@ -1,17 +1,33 @@
+<script setup lang="ts">
+import CartSection from './components/CartSection.vue';
+import { Suspense } from 'vue';
+</script>
+
 <template>
-	<div class="app">
-		<div class="header flex-row-between">
+  <div class="app">
+		<header class="header">
 			<h1>PortalParts</h1>
-			<h2>Cart</h2>
-		</div>
-		<div class="body flex-row-center">
-			<cart-body />
-			<cart-summary />
-		</div>
+      <h2>Cart</h2>
+		</header>
+    <main class="body">
+      <Suspense>
+        <cart-section></cart-section>
+      </Suspense>
+    </main>
 	</div>
 </template>
 
-<script setup>
-import CartBody from "./components/CartBody.vue";
-import CartSummary from "./components/CartSummary.vue";
-</script>
+<style>
+.header {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+</style>
