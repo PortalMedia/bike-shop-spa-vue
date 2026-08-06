@@ -11,7 +11,12 @@
 	</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { onMounted } from "vue";
 import CartBody from "./components/CartBody.vue";
 import CartSummary from "./components/CartSummary.vue";
+
+onMounted(async ()=> {
+	const cart =  new Object(); //Help! How do I load data?
+});
 </script>
