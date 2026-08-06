@@ -5,21 +5,26 @@
 			<h2>Cart</h2>
 		</div>
 		<div class="body flex-row-center">
-			<cart-body :products="products"/>
-			<cart-summary @submit="submitCheckout()" />
+			<cart-body :products="cart?.products ?? []"/>
+			<cart-summary :cart="cart" @submit="submitCheckout()" />
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import CartBody from "./components/CartBody.vue";
 import CartSummary from "./components/CartSummary.vue";
+import { Product, CartType } from "./types/Cart.ts";
 
-const products = new Array;
+const cart = ref<CartType | null>(null);
 
 onMounted(async ()=> {
-	const cart =  new Object();
+	const response = await fetch("https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart");
+	if(response.status == 200) {
+		const cartRes: CartType = await response.json() as CartType;
+		cart.value = cartRes;
+	}
 });
 
 function submitCheckout() {
