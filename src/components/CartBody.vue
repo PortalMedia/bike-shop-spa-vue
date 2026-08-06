@@ -4,7 +4,7 @@
 		<div class="cart-body-content">
 			<!-- render cart products here -->
 			 <div v-for="item in products">
-				{{ item.message }}
+				
 			 </div>
 		</div>
 	</div>
