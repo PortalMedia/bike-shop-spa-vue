@@ -17,7 +17,7 @@ import CartBody from "./components/CartBody.vue";
 import CartSummary from "./components/CartSummary.vue";
 
 onMounted(async ()=> {
-	const cart =  new Object(); //Help! How do I load data?
+	const cart =  new Object();
 });
 
 function submitCheckout() {
