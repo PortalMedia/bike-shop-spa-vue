@@ -27,6 +27,6 @@
 				<span>?</span>
 			</div>
 		</div>
-		<button class="checkout-button">Checkout Now</button>
+		<button @click="$emit('submit')" class="checkout-button">Checkout Now</button>
 	</div>
 </template>

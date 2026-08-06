@@ -6,7 +6,7 @@
 		</div>
 		<div class="body flex-row-center">
 			<cart-body />
-			<cart-summary />
+			<cart-summary @submit="submitCheckout()" />
 		</div>
 	</div>
 </template>
@@ -19,4 +19,8 @@ import CartSummary from "./components/CartSummary.vue";
 onMounted(async ()=> {
 	const cart =  new Object(); //Help! How do I load data?
 });
+
+function submitCheckout() {
+	//TODO submit order <-- (Hint: not part of this exercise!)
+}
 </script>
