@@ -10,4 +10,4 @@ leaving the project barely started. We need you to finish the shopping cart for 
 - A half-started front-end app written using the Vue framework (entry point App.vue; main components CartBody.vue and CartSummary.vue)
 
 **Your Job**
-Complete the shopping cart app to the best of your ability during the time remaining. Don't worry if you don't finish everything!
+Complete the front end of the shopping cart app to the best of your ability during the time remaining. Don't worry if you don't finish everything!
