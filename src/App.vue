@@ -5,7 +5,7 @@
 			<h2>Cart</h2>
 		</div>
 		<div class="body flex-row-center">
-			<cart-body />
+			<cart-body :products="products"/>
 			<cart-summary @submit="submitCheckout()" />
 		</div>
 	</div>
@@ -15,6 +15,8 @@
 import { onMounted } from "vue";
 import CartBody from "./components/CartBody.vue";
 import CartSummary from "./components/CartSummary.vue";
+
+const products = new Array;
 
 onMounted(async ()=> {
 	const cart =  new Object();
