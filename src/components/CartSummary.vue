@@ -1,6 +1,6 @@
 <template>
 	<div v-if="cart !== null" class="cart-summary">
-		<h2>Cart Summary</h2>
+		<h2 class="m-20 ">Cart Summary</h2>
 		<div :style="{ margin: '15px 15px 60px 15px' }">
 			<div class="flex-row-between line-item">
 				<span>Subtotal</span>
@@ -81,3 +81,10 @@ function toMoney(amount: number): string {
 	});
 }
 </script>
+
+<style>
+.m-20 {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+</style>
