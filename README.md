@@ -10,7 +10,7 @@ A backend developer has created an API endpoint that returns a JSON object with 
 
 **API Endpoint**: https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart
 
-Make a GET request to the API endpoint to load the cart data into the App component’s state. Using whatever tools, resources, and coding patterns you see fit, update the CartBody and CartSummary components to fulfill each of the user-stories outlined below (Bonus stories are optional).
+Make a GET request to the API endpoint to load the cart data into the App component’s state. Using whatever resources, and coding patterns you see fit, update the CartBody and CartSummary components to fulfill each of the user-stories outlined below (Bonus stories are optional).
 
 ### User Stories
 - As a user, I want to see the brand name, product name, image, qty, and unit price of each product in my cart so I have a product-level view of my shopping cart.
