@@ -18,6 +18,6 @@ import CartSummary from "./components/CartSummary.vue";
 const cart = ref<object | null>(null);
 
 onMounted(()=> {
-	cart.value = new Object();
+	cart.value = new Object(); //TODO
 });
 </script>
