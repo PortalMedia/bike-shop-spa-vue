@@ -1,6 +1,6 @@
 <template>
 	<div class="cart-summary">
-		<span>Cart Summary</span>
+		<h2>Cart Summary</h2>
 		<div :style="{ margin: '15px 15px 60px 15px' }">
 			<div class="flex-row-between line-item">
 				<span>Subtotal</span>

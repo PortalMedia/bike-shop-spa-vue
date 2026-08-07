@@ -1,6 +1,6 @@
 <template>
 	<div class="cart-body">
-		<span>You have {{ products.length }} items in your cart</span>
+		<h2>You have {{ products.length }} items in your cart</h2>
 		<div class="cart-body-content">
 			<!-- render cart products here -->
 			 <div v-for="item in products">
