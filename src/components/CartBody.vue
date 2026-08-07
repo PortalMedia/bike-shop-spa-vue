@@ -8,7 +8,7 @@
 				<span>{{ item.brandName }}</span>
 				<span>{{ item.productName }}</span>
 				<span>Quantity: {{ item.qty }}</span>
-				<span>{{getPrice(item)}}</span>
+				<span>{{item.regularPrice}}</span>
 			 </div>
 		</div>
 	</div>
@@ -21,10 +21,4 @@ const props = defineProps<{
 	products: Product[]
 }>();
 
-function getPrice(item: Product) {
-	return (item.qty * (item.onSale ? item.salePrice : item.regularPrice)).toLocaleString('en-US', {
-		style: 'currency',
-		currency: 'USD',
-	});;
-}
 </script>
