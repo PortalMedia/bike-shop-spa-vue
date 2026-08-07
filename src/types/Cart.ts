@@ -1,4 +1,4 @@
-export type Product = {
+export interface Product {
     portalNumber: string,
     productName: string,
     brandName: string,
