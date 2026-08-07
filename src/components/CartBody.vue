@@ -3,7 +3,7 @@
 		<h2>You have {{ products.length }} items in your cart</h2>
 		<div class="cart-body-content">
 			<!-- render cart products here -->
-			 <div v-for="item in products" class="line-item flex-row-between gap-20 w-100">
+			 <div v-for="item in products">
 				<img :src="imagePath(item.imageName)" class="cart-image" alt="" />
 				<span>{{ item.brandName }}</span>
 				<span>{{ item.productName }}</span>
