@@ -8,7 +8,8 @@
 				<span>{{ item.brandName }}</span>
 				<span>{{ item.productName }}</span>
 				<span>Quantity: {{ item.qty }}</span>
-				<span>{{item.regularPrice}}</span>
+				<span>{{item.salePrice}} ea</span>
+				<span :style="{ color: '#b51414', fontSize: '12px' }">(was {{item.regularPrice}} ea)</span>
 			 </div>
 		</div>
 	</div>
