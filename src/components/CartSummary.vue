@@ -50,7 +50,7 @@ const savings = computed(()=> {
 });
 
 const tax = computed(()=> {
-	return (subtotal.value * 0.055)
+	return (subtotal.value * 0.055) //assuming Wisconsin tax rate
 });
 
 const total = computed(()=> {
