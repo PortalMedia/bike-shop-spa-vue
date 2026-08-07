@@ -1,7 +1,7 @@
 <template>
 	<div class="app">
 		<div class="header flex-row-between">
-			<h1>PortalParts Shopping Cart</h1>
+			<span>PortalParts Shopping Cart</span>
 		</div>
 		<div class="body flex-row-center">
 			<cart-body :products="cart?.products ?? []"/>
