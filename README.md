@@ -9,5 +9,8 @@ leaving the project barely started. We need you to finish the shopping cart for 
 - An API endpoint which returns a JSON object with the customer’s cart data (**API Endpoint**: https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart)
 - A half-started front-end app written using the Vue framework (entry point App.vue; main components CartBody.vue and CartSummary.vue)
 
+
+
 **Your Job**
+
 Complete the front end of the shopping cart app to the best of your ability during the time remaining. Don't worry if you don't finish everything!
