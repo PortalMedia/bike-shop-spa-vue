@@ -4,8 +4,8 @@
 			<span>PortalParts Shopping Cart</span>
 		</div>
 		<div class="body flex-row-center">
-			<cart-body :products="cart?.products ?? []"/>
-			<cart-summary :cart="cart" @submit="submitCheckout()" />
+			<cart-body />
+			<cart-summary />
 		</div>
 	</div>
 </template>
@@ -14,19 +14,10 @@
 import { onMounted, ref } from "vue";
 import CartBody from "./components/CartBody.vue";
 import CartSummary from "./components/CartSummary.vue";
-import { Product, CartType } from "./types/Cart.ts";
 
-const cart = ref<CartType | null>(null);
+const cart = ref<object | null>(null);
 
-onMounted(async ()=> {
-	const response = await fetch("https://62rng0wpc5.execute-api.us-east-1.amazonaws.com/cart");
-	if(response.status == 200) {
-		const cartRes: CartType = await response.json() as CartType;
-		cart.value = cartRes;
-	}
+onMounted(()=> {
+	cart.value = new Object();
 });
-
-function submitCheckout() {
-	//TODO submit order <-- (Hint: not part of this exercise!)
-}
 </script>

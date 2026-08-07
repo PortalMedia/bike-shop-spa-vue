@@ -8,10 +8,3 @@ export type Product = {
     imageName: string,
     onSale: boolean
 }
-
-export type CartType = {
-    id: number,
-    deliveryMethod: string,
-    shipCost: number,
-    products: Product[]
-}
