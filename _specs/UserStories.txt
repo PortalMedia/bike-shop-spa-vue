@@ -5,7 +5,7 @@ so I have a product-level view of my shopping cart.
 - As a user I want to see both the sale price and original price of each product so that I know when I’m saving 
 money. (Hint consider the salePrice, regularPrice, and onSale properties of each product).
 
-- As a user, I want to see a line-item breakdown of my cart total consisting of subtotal, shipping, and tax so 
+- As a user, I want to see a breakdown of my cart total consisting of subtotal, shipping, and tax so 
 that I can understand the total amount. (Hint: Assume the tax rate is 5.5%).
 
 - As a user, I want to see the total amount I saved on products that are on sale in my cart summary so that I 
